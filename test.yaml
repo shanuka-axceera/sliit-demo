@@ -3,13 +3,13 @@ clusters:
 - cluster:
     server: https://167772180-6443-elsy04.environments.katacoda.com/
     insecure-skip-tls-verify: true
-  name: kubernetes
+  name: katakoda-cluster
 contexts:
 - context:
-    cluster: kubernetes
-    user: kubernetes-admin
-  name: kubernetes-admin@kubernetes
-current-context: kubernetes-admin@kubernetes
+    cluster: katakoda-cluster
+    user: katakoda-cluster
+  name: katakoda-cluster
+current-context: katakoda-cluster
 kind: Config
 preferences: {}
 users:
