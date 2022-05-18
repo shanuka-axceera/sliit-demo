@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: test-sliit
-  name: test-sliit
+    app: ctse-kube-app
+  name: ctse-kube-app
 spec:
   ports:
   - port: 3005
     protocol: TCP
     targetPort: 3005
   selector:
-    app: test-sliit
+    app: ctse-kube-app
 status:
   loadBalancer: {}

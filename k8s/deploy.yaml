@@ -25,7 +25,7 @@ spec:
         app: ctse-kube-app
     spec:
       containers:
-      - image: shanukap/sliit-demo:9213f64db1fa0081f1acf7d96f8e99244288866a
+      - image: shanukap/sliit-demo:700592b5b971f13cd19a701faea011c71d0499ac
         imagePullPolicy: Always
         name: sliit-demo
         resources: {}
