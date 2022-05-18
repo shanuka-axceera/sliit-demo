@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   generation: 1
   labels:
-    app: ctse
-  name: ctse
+    app: ctse-kube-app
+  name: ctse-kube-app
   namespace: default
 spec:
   progressDeadlineSeconds: 600
@@ -12,7 +12,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: ctse
+      app: ctse-kube-app
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -22,10 +22,10 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: ctse
+        app: ctse-kube-app
     spec:
       containers:
-      - image: shanukap/sliit-demo:f296897d4ca7befed4752a647bf26bc57a08419e
+      - image: shanukap/sliit-demo:9213f64db1fa0081f1acf7d96f8e99244288866a
         imagePullPolicy: Always
         name: sliit-demo
         resources: {}
